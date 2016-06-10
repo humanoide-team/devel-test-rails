@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Blog</title>
+    <script type="text/javascript" src="libs/angular.min.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
+    <style media="screen">
+      .box {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" ng-controller="PostCtr">
+        <h1>Gerenciamento de artigos</h1>
+        <button ng-show="!item" ng-click="item={}">Novo Artigo</button>
+
+        <form ng-submit="form(item)" ng-show="item">
+          <p class="box">
+            <label>Autor
+              <input required type="text" ng-model="item.author">
+            </label>
+          </p>
+          <p class="box">
+            <label>Titulo
+              <input required type="text" ng-model="item.title">
+            </label>
+          </p>
+          <p class="box">
+            <label>Url amigavel
+              <input required type="text" ng-model="item.slug">
+            </label>
+          </p>
+          <p class="box">
+            <label>Descrição
+              <input required type="text" ng-model="item.description">
+            </label>
+          </p>
+          <p class="box">
+            <label>Conteúdo
+              <textarea required rows="8" ng-model="item.body" cols="40"></textarea>
+            </label>
+          </p>
+          <p>
+            <button type="submit">Enviar</button>
+            <button ng-click="item=null">Cancelar</button>
+          </p>
+        </form>
+
+        <table ng-show="!item">
+            <thead>
+              <th>
+                Titulo
+              </th>
+              <th>
+
+              </th>
+            </thead>
+            <tbody>
+              <tr ng-repeat="item in data">
+                <td>
+                  {{item.title}}
+                </td>
+                <td>
+                  <a href="javascipr:void(0)" ng-click="detail(item)">Detalhe</a>
+                  <a href="javascipr:void(0)" ng-click="delete(item)">Excluir</a>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+  </body>
+</html>

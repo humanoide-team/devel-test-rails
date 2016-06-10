@@ -1,0 +1,17 @@
+<h1><%= t('.title') %></h1>
+<%= link_to t('.link_new'), new_post_path() %>
+<hr>
+
+<table>
+  <tbody>
+      <%if !@posts.nil? && @posts.size == 0 %>
+          <tr>
+            <td colspan="2">
+               <%= t('.no_data') %>
+            </td>
+          </tr>
+      <%else%>
+        <%= render @posts, :locals => {detail_key: t('.detail'), edit_key: t('.edit'), delete_key: t('.delete'), confirm_message_key: t('.confirm_message') } %>
+      <%end%>
+  </tbody>
+</table>
