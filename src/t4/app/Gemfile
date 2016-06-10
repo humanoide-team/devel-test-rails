@@ -1,0 +1,8 @@
+source 'https://rubygems.org'
+ruby '2.2.2'
+
+gem 'sinatra'
+gem 'data_mapper'
+gem 'json'
+gem 'sqlite3'
+gem 'dm-sqlite-adapter', '~> 1.2'
