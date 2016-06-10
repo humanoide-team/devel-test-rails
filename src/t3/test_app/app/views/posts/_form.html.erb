@@ -1,0 +1,36 @@
+<%= form_for @post do |f| %>
+  <% if @post.errors.any? %>
+     <div id="errors">
+         <h2><%= t('general.error_title')%></h2>
+     </div>
+  <% end %>
+
+  <p class="box">
+    <%= f.label :author %>
+    <%= f.text_field :author %>
+    <%= error_tag @post, :author %>
+  </p>
+  <p class="box">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <%= error_tag @post, :title %>
+  </p>
+  <p class="box">
+    <%= f.label :slug %>
+    <%= f.text_field :slug %>
+    <%= error_tag @post, :slug %>
+  </p>
+  <p class="box">
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+    <%= error_tag @post, :description %>
+  </p>
+  <p class="box">
+    <%= f.label :body %>
+    <%= f.text_area :body %>
+    <%= error_tag @post, :body %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<%end%>

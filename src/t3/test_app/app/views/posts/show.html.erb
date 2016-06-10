@@ -1,0 +1,18 @@
+<h1><%= t('.title') %></h1>
+<%= link_to t('general.link_back'), root_path() %>
+<hr>
+<p class="box">
+  <%= t '.author', :author => @post.author %>
+</p>
+<p class="box">
+  <%= t '.title_post', :title => @post.title %>
+</p>
+<p class="box">
+  <%= t '.slug', :slug => @post.slug %>
+</p>
+<p class="box">
+  <%= t '.description', :description => @post.description %>
+</p>
+<p class="box">
+  <%= t '.body', :body => @post.body %>
+</p>

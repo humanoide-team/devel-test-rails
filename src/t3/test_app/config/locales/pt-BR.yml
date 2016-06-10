@@ -1,0 +1,47 @@
+pt-BR:
+  devise:
+    failure:
+      admin_user:
+        unauthenticated: "Faça o login para acessar o painel"
+    sessions:
+      admin_user:
+        signed_in: "Bem vindo ao painel"
+
+  general:
+      error_title: 'Há erros no formulário, por favor verifique'
+      link_back: 'Voltar'
+      sucesso_update: 'Seu atigo foi atualizado com sucesso'
+      sucesso_create: 'Seu artigo foi criado com sucesso'
+      sucesso_delete: 'Seu artigo foi excluido com sucesso'
+  helpers:
+    submit:
+      create: "Cadastrar novo"
+      update: "Atualizar artigo"
+  posts:
+    index:
+      title: 'Gerenciamento de artigos'
+      no_data: 'nenhum artigo cadastrado'
+      link_new: 'novo artigo'
+      edit: "Editar"
+      delete: "Excluir"
+      detail: "Detalhe"
+      confirm_message: "Você tem certeza que deseja excluir?"
+    edit:
+      title: 'Editar Artigo'
+    new:
+      title: 'Novo Artigo'
+    show:
+      title: "Detalhe Artigo"
+      author: "Nome autor: %{author}"
+      title_post: "Titlo: %{title}"
+      slug: "Url amigavel: %{slug}"
+      description: "Descrição: %{description}"
+      body: "Conteúdo: %{body}"
+  activerecord:
+    attributes:
+      post:
+        title: 'Titulo'
+        author: 'Autor'
+        slug: 'Url Amigavel'
+        description: 'Descrição'
+        body: 'Conteúdo'
