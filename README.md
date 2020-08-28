@@ -1,4 +1,4 @@
-# Aplicação para novos desenvolvedores Backend Rails - webredonda
+# Aplicação para novos desenvolvedores Backend Rails - Humanoide
 
 Olá, se você chegou até aqui, provavelmente se interessou por uma de nossas vagas em aberto para desenvolvedores Backend Rails.
 
@@ -12,6 +12,6 @@ Para se candidatar é simples:
 
 + Para o teste prático, siga as instruções em [TEST.md](TEST.md);
 
-+ Envie um Pull Request utlizando o branch que você criou através do github;
++ Envie um Pull Request utilizando a branch que você criou através do github;
 
 Boa sorte!

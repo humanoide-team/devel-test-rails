@@ -9,7 +9,7 @@
 ## O que será avaliado nesse teste?
 + Organização/qualidade de código/Semântica, legibilidade
 + Capacidade técnica
-+ Conhecimentos de tecnologias, padrões e técnicas BackEnd end em geral: Design Patterns, SOLID, DRY, TDD.
++ Conhecimentos de tecnologias, padrões e técnicas Backend em geral: Design Patterns, SOLID, DRY, TDD.
 + Atenção
 + Dedicação
 + Agilidade

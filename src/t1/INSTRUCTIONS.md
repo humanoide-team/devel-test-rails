@@ -3,7 +3,7 @@
 ## Primeira etapa
 
 Construa uma aplicação em Rails CRUD (CREATE, READ, UPDATE, DELETE),  orientado a objetos.
-Este CRUD deverá gerenciar Páginas Web, que são composta pelos seguintes campos:
+Este CRUD deverá gerenciar Posts, que são composta pelos seguintes campos:
 Os campos a seguir são obrigatórios, sinta-se a vontade para criar outros campos se achar necessário.
 
 + id;
@@ -18,9 +18,9 @@ Os campos a seguir são obrigatórios, sinta-se a vontade para criar outros camp
 
 + author;
 
-+ insert_date;
++ created_date;
 
-+ update_date;
++ updated_date;
 
 
 ## Segunda Etapa
@@ -42,4 +42,3 @@ Implemente cache na aplicação utilizando os recursos do Rails
 
 + Não utilize o scaffold no teste
 + As rotas devem utilizar o padrão restfull
-
